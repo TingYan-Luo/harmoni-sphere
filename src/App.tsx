@@ -9,7 +9,7 @@ const MRouter = () => {
 
 function App() {
   return (
-    <div>
+    <div id="app-root">
       <BrowserRouter>
         <MRouter />
       </BrowserRouter>
