@@ -16,7 +16,7 @@ export default function Home() {
 
   const onImageClick = (id: string, src: string) => {
     console.log('🚀 ~ onImageClick ~ src:', src);
-    setActiveId(id);
+    setActiveId(id === activeId ? undefined : id);
   };
 
   useEffect(() => {
@@ -35,34 +35,50 @@ export default function Home() {
         <OrbitControls enableZoom={false} />
       </Canvas>
       <div className={styles.images}>
-        <InfiniteImageCarousel 
-          id="first"
-          activeId={activeId}
-          active={activeId?.startsWith('first')}
-          images={images}
-          itemHeight={100}
-          itemWidth={200}
-          onItemClick={onImageClick}
-        />
-        <InfiniteImageCarousel 
-          id="second"
-          activeId={activeId}
-          active={activeId?.startsWith('second')}
-          images={images}
-          itemHeight={100}
-          itemWidth={200}
-          direction="right"
-          onItemClick={onImageClick}
-        />
-        <InfiniteImageCarousel 
-          id="thrid"
-          active={activeId?.startsWith('thrid')}
-          activeId={activeId}
-          images={images}
-          itemHeight={100}
-          itemWidth={200}
-          onItemClick={onImageClick}
-        />
+        <div className={styles['images-tip']}>
+          PART OF ANIMAL DISPLAY
+        </div>
+        <div className={styles['images-title']}>
+          <div className={styles['images-title-text']}>
+            THEY ARE ON THE BRINK OF EXTINCTION
+          </div>
+          <div className={styles['images-title-action']}>
+            {"-> View more endangered animals"}
+          </div>
+        </div>
+        <div className={styles['images-list']}>
+          <InfiniteImageCarousel 
+            id="first"
+            activeId={activeId}
+            active={activeId?.startsWith('first')}
+            images={images}
+            itemHeight={100}
+            itemWidth={200}
+            onItemClick={onImageClick}
+          />
+          <InfiniteImageCarousel 
+            id="second"
+            activeId={activeId}
+            active={activeId?.startsWith('second')}
+            images={images}
+            itemHeight={100}
+            itemWidth={200}
+            direction="right"
+            onItemClick={onImageClick}
+          />
+          <InfiniteImageCarousel 
+            id="thrid"
+            active={activeId?.startsWith('thrid')}
+            activeId={activeId}
+            images={images}
+            itemHeight={100}
+            itemWidth={200}
+            onItemClick={onImageClick}
+          />
+        </div>
+      </div>
+      <div className={styles.footer}>
+
       </div>
     </div>
   );

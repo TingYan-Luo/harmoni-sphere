@@ -19,29 +19,73 @@
   }
 
   .images {
-    position: relative;
-    padding: 8px;
     color: #fff;
 
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      width: 24px;
-      height: 100%;
+    &-tip {
+      display: flex;
+      align-items: center;
+      margin: 24px;
+      font-size: 14px;
+      line-height: 14px;
+      color: #888;
+
+      &::after {
+        content: "";
+        display: block;
+        flex: 1;
+        height: 1px;
+        margin-left: 8px;
+        background-color: #888;
+      }
     }
 
-    &::before {
-      left: 0;
-      background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    &-title {
+      margin-left: 24px;
+      margin-bottom: 32px;
+      &-text {
+        font-size: 50px;
+        line-height: 58px;
+      }
+      &-action {
+        display: inline-block;
+        font-size: 16px;
+        color: #888;
+        cursor: pointer;
+        transition: all 0.4s;
+
+        &:hover {
+          text-decoration-line: underline;
+          text-underline-offset: 2px;
+          text-decoration-thickness: 2px;
+          text-decoration-color: #888;
+        }
+      }
     }
 
-    &::after {
-      right: 0;
-      background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    &-list {
+      position: relative;
+      padding: 8px;
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 24px;
+        height: 100%;
+      }
+  
+      &::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+      }
+  
+      &::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+      }
     }
+
   }
 
   &::-webkit-scrollbar {
@@ -49,7 +93,11 @@
     height: 1px;
     &-thumb {
       border-radius: 4px;
-      background-color: #818181;
+      background-color: #888;
     }
+  }
+
+  .footer {
+    height: 400px;
   }
 }
