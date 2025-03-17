@@ -3,5 +3,17 @@
   height: 100%;
   background-color: #000000;
   .canvas {
+    position: relative;
+    ::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none; /* 不影响交互 */
+      background: radial-gradient(circle, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%);
+    }
   }
 }
