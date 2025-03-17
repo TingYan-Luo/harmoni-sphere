@@ -3,8 +3,11 @@ import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import { BufferGeometry, Float32BufferAttribute, Vector3 } from "three";
 import gsap from "gsap";
+import { useFrame } from "@react-three/fiber";
 
 export default function ModelParticles () {
+  const groupRef = useRef<THREE.Group>(null);
+
   const pointsRef = useRef<THREE.Points>(null);
   // 用于保存创建好的 BufferGeometry（粒子系统几何体）
   const geometryRef = useRef(new BufferGeometry());
@@ -80,7 +83,7 @@ export default function ModelParticles () {
   // 扩散和聚合动画循环
   const startAnimation = () => {
     // 动画参数对象，用于控制插值 t
-    const animObj = { t: 0 };
+    const animObj = { t: 0, drop: 0 };
 
     const tl = gsap.timeline({ repeat: -1 });
     // 扩散动画：t 从 0 变为 1，粒子从原始位置移动到扩散目标
@@ -107,12 +110,26 @@ export default function ModelParticles () {
     // 维持扩散状态（3秒）
     tl.to(animObj, {
       duration: 3,
-      t: 1, // 保持 t = 1，不变化
+      drop: -0.2, // 让粒子 Y 轴逐渐下降 0.5
+      ease: "power1.inOut",
+      onUpdate: () => {
+        targetPositions.current.forEach((target, i) => {
+          positionsArray.current![i * 3] = target.x;
+          positionsArray.current![i * 3 + 1] = target.y + animObj.drop;
+          positionsArray.current![i * 3 + 2] = target.z;
+        });
+        geometryRef.current.setAttribute(
+          "position",
+          new Float32BufferAttribute(positionsArray.current, 3)
+        );
+        geometryRef.current.attributes.position.needsUpdate = true;
+      },
     });
     // 聚合动画：t 从 1 变回 0，粒子回到原始模型位置
     tl.to(animObj, {
       duration: 1,
       t: 0,
+      drop: 0, // 回到原始 Y 轴位置
       ease: "power1.inOut",
       onUpdate: () => {
         originalPositions.current.forEach((orig, i) => {
@@ -136,11 +153,23 @@ export default function ModelParticles () {
     });
   };
 
+  // useFrame：每帧给整个物体组加上轻微旋转（即使在停顿状态下，页面也不会静止）
+  useFrame(() => {
+    if (groupRef.current) {
+      // 仅在停顿状态下旋转或一直旋转（此处简单实现持续旋转）
+      groupRef.current.rotation.y += 0.001;
+      // 可选：加入 X 轴轻微浮动
+      groupRef.current.rotation.x = Math.sin(performance.now() * 0.001) * 0.01;
+    }
+  });
+
   return (
-    <points ref={pointsRef}>
-      {/* 直接使用已经创建好的 geometry */}
-      <primitive object={geometryRef.current} attach="geometry" />
-      <pointsMaterial attach="material" color="white" size={0.1} />
-    </points>
+    <group ref={groupRef}>
+      <points ref={pointsRef}>
+        {/* 直接使用已经创建好的 geometry */}
+        <primitive object={geometryRef.current} attach="geometry" />
+        <pointsMaterial attach="material" color="white" size={0.1} />
+      </points>
+    </group>
   );
 };
