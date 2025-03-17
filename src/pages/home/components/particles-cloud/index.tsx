@@ -1,14 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
-import * as THREE from "three";
-import { BufferGeometry, Float32BufferAttribute, Vector3 } from "three";
+import { BufferGeometry, Float32BufferAttribute, Vector3, Group, Points, Mesh, Box3 } from "three";
 import gsap from "gsap";
 import { useFrame } from "@react-three/fiber";
 
 export default function ModelParticles () {
-  const groupRef = useRef<THREE.Group>(null);
+  const groupRef = useRef<Group>(null);
 
-  const pointsRef = useRef<THREE.Points>(null);
+  const pointsRef = useRef<Points>(null);
   // 用于保存创建好的 BufferGeometry（粒子系统几何体）
   const geometryRef = useRef(new BufferGeometry());
 
@@ -26,8 +25,8 @@ export default function ModelParticles () {
 
     // 遍历场景中所有 Mesh，提取顶点数据
     scene.traverse((child) => {
-      if ((child as THREE.Mesh).isMesh) {
-        const mesh = child as THREE.Mesh;
+      if ((child as Mesh).isMesh) {
+        const mesh = child as Mesh;
         if (mesh.geometry) {
           const posAttr = mesh.geometry.attributes.position;
           for (let i = 0; i < posAttr.count; i++) {
@@ -41,7 +40,7 @@ export default function ModelParticles () {
     if (vertices.length === 0) return;
 
     // 计算包围盒，并将顶点居中
-    const bbox = new THREE.Box3().setFromPoints(vertices);
+    const bbox = new Box3().setFromPoints(vertices);
     const center = new Vector3();
     bbox.getCenter(center);
     vertices = vertices.map((v) => v.sub(center));
@@ -52,7 +51,7 @@ export default function ModelParticles () {
     const cloudRadius = 5;
     targetPositions.current = vertices.map((v) => {
       // 随机方向和随机长度的偏移向量
-      const randVec = new THREE.Vector3(
+      const randVec = new Vector3(
         (Math.random() - 0.5) * 2,
         (Math.random() - 0.5) * 2,
         (Math.random() - 0.5) * 2
