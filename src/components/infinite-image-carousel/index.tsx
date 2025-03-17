@@ -2,24 +2,32 @@ import React, { useEffect, useRef } from 'react';
 import './index.less';
 
 type IProps = {
+  id?: string;
   images?: string[];
   itemWidth?: number;
   itemHeight?: number;
   baseSpeed?: number;
   acceleration?: number;
   direction?: 'left' | 'right';
+  activeId?: string;
+  active?: boolean;
+  onItemClick?: (id: string, src: string) => void;
 }
 
 const rootCls = 'infinite-image-carousel';
 
 export default function InfiniteImageCarousel(props: IProps) {
   const {
+    id,
     images = [],
     itemWidth = 200,
     itemHeight = 200,
     baseSpeed = 1, // 基础速度（像素/帧）
     acceleration = 0.05, // 每帧加/减速度
     direction = 'left',
+    active,
+    activeId,
+    onItemClick,
   } = props
   const containerRef = useRef<HTMLDivElement>(null);
   // 使用 ref 保存当前动画速度和目标速度，避免频繁触发 re-render
@@ -75,6 +83,14 @@ export default function InfiniteImageCarousel(props: IProps) {
     };
   }, [acceleration]);
 
+  useEffect(() => {
+    if (active) {
+      handleMouseEnter();
+    } else {
+      handleMouseLeave();
+    }
+  }, [active]);
+
   // 鼠标进入时设置目标速度为0，实现缓慢减速
   const handleMouseEnter = () => {
     targetSpeedRef.current = 0;
@@ -82,6 +98,7 @@ export default function InfiniteImageCarousel(props: IProps) {
 
   // 鼠标离开后设置目标速度恢复到 baseSpeed，实现缓慢加速
   const handleMouseLeave = () => {
+    if (active) return;
     targetSpeedRef.current = direction === 'left' ? baseSpeed : -baseSpeed;
   };
 
@@ -96,27 +113,30 @@ export default function InfiniteImageCarousel(props: IProps) {
       onMouseLeave={handleMouseLeave}
     >
       <div className={`${rootCls}-list`}>
-        {duplicatedImages.map((src, index) => (
-          <div
-            key={index}
-            className={`${rootCls}-list-item`}
-            style={{
-              width: itemWidth,
-              height: itemHeight,
-            }}
-          >
-            <img
-              src={src}
-              alt={`img-${index}`}
+        {duplicatedImages.map((src, index) => {
+          const itemId = `${id ? `${id}-` : ''}img-${index}`;
+          return (
+            <div
+              key={itemId}
+              className={`${rootCls}-list-item${activeId === itemId ? ` ${rootCls}-list-item-active` : ''}`}
               style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover'
+                width: itemWidth,
+                height: itemHeight,
               }}
-            />
-            {/* {src} */}
-          </div>
-        ))}
+              onClick={() => onItemClick(itemId, src)}
+            >
+              <img
+                src={src}
+                alt={itemId}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+          )
+        })}
       </div>
     </div>
   );
