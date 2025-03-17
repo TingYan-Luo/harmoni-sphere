@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   background-color: #000000;
+  overflow: auto;
   .canvas {
     position: relative;
     ::before {
@@ -14,6 +15,41 @@
       left: 0;
       pointer-events: none; /* 不影响交互 */
       background: radial-gradient(circle, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%);
+    }
+  }
+
+  .images {
+    position: relative;
+    padding: 8px;
+    color: #fff;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 24px;
+      height: 100%;
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 1px;
+    &-thumb {
+      border-radius: 4px;
+      background-color: #818181;
     }
   }
 }
