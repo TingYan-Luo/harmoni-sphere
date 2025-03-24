@@ -37,9 +37,12 @@ export default function Home() {
     <div className={styles.home}>
       <div className={styles.main}>
         <div className={styles['main-title']}>
-          <h1 className={styles['main-title-1']}>{texts.main?.title[0]}</h1>
+          <h1 className={styles['main-title-1']}>
+            {texts.main?.title[0]}
+            <p className={styles['main-title-desc']}>{texts.main?.desc}</p>
+          </h1>
           <h1 className={styles['main-title-2']}>{texts.main?.title[1]}</h1>
-          <p className={styles['main-title-desc']}>{texts.main?.desc}</p>
+          
         </div>
         <Canvas 
           className={styles.canvas} 
