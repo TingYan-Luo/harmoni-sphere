@@ -1,0 +1,73 @@
+[
+  {
+    "introduction": "WWF is one of the world’s largest wildlife conservation organizations, dedicated to protecting endangered species and their habitats through scientific research, environmental advocacy, and sustainable development programs.",
+    "introduction_zh": "WWF 是全球最大的野生动物保护组织之一，致力于通过科学研究、环境保护和可持续发展项目来保护濒危物种及其栖息地，倡导人与自然和谐共生。",
+    "id": "wwf",
+    "website": "World Wildlife Fund (WWF)",
+    "website_zh": "世界自然基金会(WWF)",
+    "url": "https://www.worldwildlife.org/",
+    "thumbnail": "https://fca7603378a4e3ebeab2-4e03b1ac88f27f7b20b4cf232f717383.ssl.cf1.rackcdn.com/photos/social/landing_page_share2.jpg"
+  },
+  {
+    "introduction": "PETA is the world’s largest animal rights organization, advocating against animal cruelty, promoting veganism, and fighting for animal welfare through public awareness campaigns, lawsuits, and direct actions.",
+    "introduction_zh": "PETA 是全球规模最大的动物权益保护组织，主张反对动物虐待，推广素食主义和动物福利理念，通过宣传、法律诉讼和直接行动推动动物权益改善。",
+    "id": "peta",
+    "website": "People for the Ethical Treatment of Animals (PETA)",
+    "website_zh": "PETA",
+    "url": "https://www.peta.org/",
+    "thumbnail": "https://www.peta.org/wp-content/uploads/2018/04/PETAwhiteonblue300.jpg"
+  },
+  {
+    "introduction": "IFAW is committed to rescuing and protecting animals around the world, focusing on emergency relief, conservation efforts, and habitat protection to improve the well-being of wildlife.",
+    "introduction_zh": "IFAW 致力于全球范围内的动物救助、保护和野生动物栖息地维护，通过紧急救援、长期保护项目以及公众教育，帮助改善动物生存环境。",
+    "id": "ifaw",
+    "website": "International Fund for Animal Welfare (IFAW)",
+    "website_zh": "国际爱护动物基金会(IFAW)",
+    "url": "https://www.ifaw.org/",
+    "thumbnail": "https://d1jyxxz9imt9yb.cloudfront.net/main_page/18/meta_image/regular/01-Homepage-EN.jpg"
+  },
+  {
+    "introduction": "IAR specializes in rescuing and rehabilitating animals in need across the globe, providing medical care, sanctuary, and long-term conservation support to improve animal welfare.",
+    "introduction_zh": "该组织专注于全球动物救援与康复工作，通过现场救助、医疗护理和长期安置项目，为陷入困境的动物提供帮助，改善动物福利。",
+    "id": "iar",
+    "website": "International Animal Rescue (IAR)",
+    "website_zh": "国际动物救援组织(IAR)",
+    "url": "https://www.animalrescue.org/",
+    "thumbnail": "https://uploads-ssl.webflow.com/60f3ae621a52266311cef9f6/617cb2a5dd239cf36222b04a_OpenGraphImage.jpg"
+  },
+  {
+    "introduction": "This organization works worldwide to improve animal welfare, focusing on ending wildlife exploitation, promoting humane treatment of farm and domestic animals, and supporting emergency animal rescues.",
+    "introduction_zh": "世界动物保护协会以推动全球动物福利改善为使命，关注野生动物救援、动物贸易监管及紧急救援等领域，倡导动物人道对待。",
+    "id": "world_animal_protection",
+    "website": "World Animal Protection",
+    "website_zh": "世界动物保护协会",
+    "url": "https://www.worldanimalprotection.org/",
+    "thumbnail": "https://www.worldanimalprotection.org/siteassets/just-transition/world-animal-protection.png"
+  },
+  {
+    "introduction": "Born Free Foundation aims to end the exploitation and captivity of wild animals, advocating for their freedom and dignity through education, legal action, and direct rescue missions.",
+    "introduction_zh": "Born Free Foundation 旨在结束圈养、虐待和商业化利用动物，通过宣传、法律倡导和直接行动，争取让动物获得自由和尊严。",
+    "id": "born_free",
+    "website": "Born Free Foundation",
+    "url": "https://www.bornfree.org.uk/",
+    "thumbnail": "https://www.bornfree.org.uk/wp-content/uploads/2023/03/og-img.png"
+  },
+  {
+    "introduction": "WildAid focuses on reducing the demand for illegal wildlife products through global media campaigns, government partnerships, and corporate initiatives, promoting wildlife conservation worldwide.",
+    "introduction_zh": "WildAid 通过全球媒体、公众教育及与政府和企业的合作，致力于减少非法野生动物贸易和消费，倡导全球野生动物保护行动。",
+    "id": "wildaid",
+    "website": "WildAid",
+    "website_zh": "WildAid",
+    "url": "https://wildaid.org/",
+    "thumbnail": "https://wildaid.org/wp-content/uploads/2017/06/about-slider-4-1.jpg"
+  },
+  {
+    "introduction": "HSI is a global animal protection organization working to improve animal welfare through legislative advocacy, education, and hands-on rescue efforts for farm animals, wildlife, and animals in research.",
+    "introduction_zh": "HSI 是一家国际性动物保护组织，专注于改善全球动物福利，推动立法、教育和现场保护行动，保护野生动物、农场动物和实验动物。",
+    "id": "hsi",
+    "website": "Humane Society International (HSI)",
+    "website_zh": "国际动物保护会(HSI)",
+    "url": "https://www.hsi.org/",
+    "thumbnail": "https://www.humaneworld.org/sites/default/files/styles/sa_social_media_facebook/public/2025-03/209755_Seal%20Hunt%202009%20%281%29_1.JPG?h=60d4239c&itok=Fa4b7J_y"
+  }
+]

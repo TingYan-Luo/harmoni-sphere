@@ -1,0 +1,16 @@
+{
+  "main": {
+    "title": ["Love and Respect", "Bridging the Boundaries Between Species"],
+    "desc": "When we see the world through the lens of love and respect, the boundaries of life begin to fade, and the vision of peace comes within reach."
+  },
+  "animals": {
+    "tip": "PART OF ANIMAL DISPLAY",
+    "title": "THEY ARE ON THE BRINK OF EXTINCTION",
+    "action": "View more endangered animals"
+  },
+  "about": {
+    "tip": "LET'S PROTECT ANIMALS TOGETHER",
+    "title": ["Protecting Life, Sharing the Future", "Renowned Global Animal Protection Organizations"],
+    "desc": "Wildlife is an essential part of our planet’s ecosystem, yet many species face the threat of extinction. These renowned global animal protection organizations are dedicated to saving endangered species, improving animal welfare, and promoting environmental sustainability. Join us in speaking up for animals and protecting our shared home!"
+  }
+}

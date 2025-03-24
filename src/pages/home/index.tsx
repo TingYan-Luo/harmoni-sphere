@@ -1,10 +1,14 @@
+import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import styles from './index.module.less';
 import ParticleCloud from "./components/particles-cloud";
-import { useEffect, useState } from "react";
-import { MockImages } from "./mock";
 import InfiniteImageCarousel from "../../components/infinite-image-carousel";
+
+import SpeciesList from "./stastic/species-list.json";
+import TextEn from './stastic/text-en.json';
+import TextZh from './stastic/text-zh.json';
+import Websites from './stastic/websites.json';
+import styles from './index.module.less';
 
 /*
  * @author: tingyan.lty
@@ -13,37 +17,50 @@ import InfiniteImageCarousel from "../../components/infinite-image-carousel";
 export default function Home() {
   const [images, setImages] = useState([]);
   const [activeId, setActiveId] = useState<string>();
-
-  const onImageClick = (id: string, src: string) => {
+  const [texts, setTexts] = useState<Record<string, any>>({});
+  const [language, setLanguage] = useState<'en' | 'zh'>('en');
+  const getImagesList = async () => {
+    setImages(SpeciesList);
+  };
+  const onImageClick = (id: string, src: any) => {
     console.log('🚀 ~ onImageClick ~ src:', src);
     setActiveId(id === activeId ? undefined : id);
   };
 
   useEffect(() => {
-    setImages(MockImages);
+    setLanguage('en');
+    getImagesList();
+    setTexts(language === 'zh' ? TextZh : TextEn);
   }, []);
 
   return (
     <div className={styles.home}>
-      <Canvas 
-        className={styles.canvas} 
-        style={{ height: '100vh' }} 
-        camera={{ position: [0, 15, 15], fov: 40 }}
-      >
-        <ParticleCloud />
-        <ambientLight intensity={0.5} />
-        <OrbitControls enableZoom={false} />
-      </Canvas>
+      <div className={styles.main}>
+        <div className={styles['main-title']}>
+          <h1 className={styles['main-title-1']}>{texts.main?.title[0]}</h1>
+          <h1 className={styles['main-title-2']}>{texts.main?.title[1]}</h1>
+          <p className={styles['main-title-desc']}>{texts.main?.desc}</p>
+        </div>
+        <Canvas 
+          className={styles.canvas} 
+          style={{ height: '100vh' }} 
+          camera={{ position: [0, 15, 15], fov: 40 }}
+        >
+          <ParticleCloud />
+          <ambientLight intensity={0.5} />
+          <OrbitControls enableZoom={false} />
+        </Canvas>
+      </div>
       <div className={styles.images}>
-        <div className={styles['images-tip']}>
-          PART OF ANIMAL DISPLAY
+        <div className={styles.tip}>
+          {texts.animals?.tip}
         </div>
         <div className={styles['images-title']}>
-          <div className={styles['images-title-text']}>
-            THEY ARE ON THE BRINK OF EXTINCTION
-          </div>
+          <h3 className={styles['images-title-text']}>
+            {texts.animals?.title}
+          </h3>
           <div className={styles['images-title-action']}>
-            {"-> View more endangered animals"}
+            {`-> ${texts.animals?.action}`}
           </div>
         </div>
         <div className={styles['images-list']}>
@@ -51,18 +68,18 @@ export default function Home() {
             id="first"
             activeId={activeId}
             active={activeId?.startsWith('first')}
-            images={images}
-            itemHeight={100}
-            itemWidth={200}
+            images={images.slice(0, 10)}
+            itemHeight={200}
+            itemWidth={300}
             onItemClick={onImageClick}
           />
           <InfiniteImageCarousel 
             id="second"
             activeId={activeId}
             active={activeId?.startsWith('second')}
-            images={images}
-            itemHeight={100}
-            itemWidth={200}
+            images={images.slice(10, 20)}
+            itemHeight={200}
+            itemWidth={300}
             direction="right"
             onItemClick={onImageClick}
           />
@@ -70,11 +87,39 @@ export default function Home() {
             id="thrid"
             active={activeId?.startsWith('thrid')}
             activeId={activeId}
-            images={images}
-            itemHeight={100}
-            itemWidth={200}
+            images={images.slice(20)}
+            itemHeight={200}
+            itemWidth={300}
             onItemClick={onImageClick}
           />
+        </div>
+      </div>
+      <div className={styles.about}>
+        <div className={styles.tip}>
+          {texts.about?.tip}
+        </div>
+        {texts.about?.title?.map(item => <h3>{item}</h3>)}
+        <p>{texts.about?.desc}</p>
+        <div className={styles.websites}>
+          {
+            Websites.map(item => (
+              <div key={item.id} className={styles['websites-item']}>
+                <img 
+                  className={styles['websites-item-img']} 
+                  src={item.thumbnail} 
+                  alt={language === 'zh' ? item.website_zh : item.website} 
+                />
+                <div className={styles['websites-item-content']}>
+                  <div className={styles['websites-item-title']}>
+                    {language === 'zh' ? item.website_zh : item.website}
+                  </div>
+                  <div className={styles['websites-item-desc']}>
+                    {language === 'zh' ? item.introduction_zh : item.introduction}
+                  </div>
+                </div>
+              </div>
+            ))
+          }
         </div>
       </div>
       <div className={styles.footer}>

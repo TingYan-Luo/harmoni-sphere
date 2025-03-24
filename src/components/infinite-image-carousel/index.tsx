@@ -3,7 +3,7 @@ import './index.less';
 
 type IProps = {
   id?: string;
-  images?: string[];
+  images?: any[];
   itemWidth?: number;
   itemHeight?: number;
   baseSpeed?: number;
@@ -12,6 +12,7 @@ type IProps = {
   activeId?: string;
   active?: boolean;
   onItemClick?: (id: string, src: string) => void;
+  itemRender?: (data: any, index: number) => React.ReactNode;
 }
 
 const rootCls = 'infinite-image-carousel';
@@ -28,6 +29,7 @@ export default function InfiniteImageCarousel(props: IProps) {
     active,
     activeId,
     onItemClick,
+    itemRender,
   } = props
   const containerRef = useRef<HTMLDivElement>(null);
   // 使用 ref 保存当前动画速度和目标速度，避免频繁触发 re-render
@@ -113,7 +115,7 @@ export default function InfiniteImageCarousel(props: IProps) {
       onMouseLeave={handleMouseLeave}
     >
       <div className={`${rootCls}-list`}>
-        {duplicatedImages.map((src, index) => {
+        {duplicatedImages.map((item, index) => {
           const itemId = `${id ? `${id}-` : ''}img-${index}`;
           return (
             <div
@@ -123,17 +125,19 @@ export default function InfiniteImageCarousel(props: IProps) {
                 width: itemWidth,
                 height: itemHeight,
               }}
-              onClick={() => onItemClick(itemId, src)}
+              onClick={() => onItemClick(itemId, item)}
             >
-              <img
-                src={src}
-                alt={itemId}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover'
-                }}
-              />
+              {itemRender ? itemRender(item, index) : (
+                <img
+                  src={item.image}
+                  alt={item.scientificName}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
+                />
+              )}
             </div>
           )
         })}
