@@ -124,8 +124,24 @@ export default function Home() {
             ))
           }
         </div>
+        <div className={styles.sun}></div>
       </div>
       <div className={styles.footer}>
+        <div className={styles['footer-text']}>{texts.end}</div>
+        <div className={styles['footer-grass']}>
+          <div className={`${styles['footer-grass-1']} ${styles['footer-grass-1-1']}`}></div>
+          <div className={`${styles['footer-grass-1']} ${styles['footer-grass-1-2']}`}></div>
+          <div className={`${styles['footer-grass-1']} ${styles['footer-grass-1-3']}`}></div>
+          <div className={`${styles['footer-grass-2']} ${styles['footer-grass-2-1']}`}></div>
+          <div className={`${styles['footer-grass-2']} ${styles['footer-grass-2-2']}`}></div>
+          <div className={`${styles['footer-grass-2']} ${styles['footer-grass-2-3']}`}></div>
+          <div className={`${styles['footer-grass-3']} ${styles['footer-grass-3-1']}`}></div>
+          <div className={`${styles['footer-grass-3']} ${styles['footer-grass-3-2']}`}></div>
+          <div className={styles['footer-flower-1']}></div>
+          <div className={styles['footer-flower-2']}></div>
+          <div className={styles['footer-flower-3']}></div>
+          <div className={styles['footer-flower-4']}></div>
+        </div>
 
       </div>
     </div>

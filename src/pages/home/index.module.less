@@ -121,6 +121,7 @@
   }
 
   .about {
+    position: relative;
     color: #fff;
     background: -webkit-linear-gradient(180deg, #000000,#7379ce,#ccd5ff);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(180deg, #000000,#7379ce,#ccd5ff);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
     .tip {
@@ -145,6 +146,8 @@
     }
 
     .websites {
+      position: relative;
+      z-index: 2;
       padding: 24px 90px;
       &-item {
         display: flex;
@@ -198,8 +201,209 @@
     }
   }
 
+  .sun {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    /* 发光效果 */
+    box-shadow: 
+    0 0 50px 20px rgba(255, 215, 170, 0.7),
+    0 0 100px 40px rgba(255, 190, 120, 0.4);
+  
+    /* 太阳表面纹理 */
+    background: radial-gradient(
+      circle at center,
+      #fff3b0 0%,
+      // #ffcb5f 50%,
+      rgba(255, 215, 170, 0.7) 80%,
+      transparent 100%
+    );
+    
+    /* 动画效果 - 脉动 */
+    animation: pulse 4s ease-in-out infinite;
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 
+          0 0 50px 20px rgba(255, 215, 170, 0.7),
+          0 0 100px 40px rgba(255, 190, 120, 0.4);
+      }
+      50% {
+        transform: scale(1.04);
+        box-shadow: 
+          0 0 60px 25px rgba(255, 215, 170, 0.8),
+          0 0 120px 50px rgba(255, 190, 120, 0.5);
+      }
+    }
+    /* 太阳光线效果 */
+    &::after {
+      content: "";
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    right: -40px;
+    bottom: -40px;
+    background: radial-gradient(
+      circle,
+      rgba(255, 230, 180, 0.5) 0%,
+      rgba(255, 230, 180, 0) 75%
+    );
+    border-radius: 50%;
+    z-index: -1;
+    }
+  }
+
   .footer {
+    position: relative;
     height: 400px;
     background-color: #ccd5ff;
+    overflow: hidden;
+
+    &-text {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 800;
+      color: #fff;
+    }
+    &-grass {
+      width: 100%;
+      height: 80px;
+      border-top-left-radius: 80%;
+      border-top-right-radius: 80%;
+      background-color: rgb(127, 188, 127);
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+
+      &-1 {
+        position: absolute;
+
+        width: 65px;
+        height: 60px;
+        background-image: url(../../assets/grass.svg);
+        background-size: 240px 240px;
+        background-position: -13px -56px;
+
+        &-1 {
+          top: -12px;
+          left: 15px;
+        }
+
+        &-2 {
+          top: -8px;
+          left: 95%;
+        }
+        &-3 {
+          top: -40px;
+          left: 40%;
+        }
+      }
+      &-2 {
+        position: absolute;
+        // top: 0;
+        // left: 0;
+        
+        width: 74px;
+        height: 100px;
+        background-image: url(../../assets/grass.svg);
+        background-size: 240px 240px;
+        background-position: -88px -40px;
+        
+        &-1 {
+          top: -62px;
+          left: 20%;  
+        }
+        &-2 {
+          top: -62px;
+          left: 80%;  
+          transform: rotateY(180deg);
+        }
+
+        &-3 {
+          top: -8px;
+          left: 60%;
+        }
+      }
+      &-3 {
+        position: absolute;
+        
+        width: 60px;
+        height: 86px;
+        background-image: url(../../assets/grass.svg);
+        background-size: 240px 240px;
+        background-position: -164px -36px;
+
+        &-1 {
+          top: -55px;
+          left: 10%;
+        }
+        &-2 {
+          top: -46px;
+          left: 72%;
+        }
+      }
+      &-4 {
+        position: absolute;
+        top: -38px;
+        left: 320px;
+
+        
+        width: 65px;
+        height: 60px;
+        background-image: url(../../assets/grass.svg);
+        background-size: 240px 240px;
+        background-position: -13px -56px
+      }
+    }
+
+    &-flower {
+      &-1 {
+        position: absolute;
+        left: 15%;
+        top: -30px;
+        width: 56px;
+        height: 90px;
+        background-image: url(../../assets/flowers.svg);
+        background-size: 240px 240px;
+        background-position: -30px -18px;
+      }
+      &-2 {
+        position: absolute;
+        left: 65%;
+        top: -80px;
+        width: 33px;
+        height: 90px;
+        background-image: url(../../assets/flowers.svg);
+        background-size: 240px 240px;
+        background-position: -103px -18px;
+      }
+      &-3 {
+        position: absolute;
+        left: 50%;
+        top: -70px;
+        width: 44px;
+        height: 90px;
+        background-image: url(../../assets/flowers.svg);
+        background-size: 240px 240px;
+        background-position: -167px -18px;
+      }
+      &-4 {
+        position: absolute;
+        left: 36%;
+        top: -42px;
+        width: 45px;
+        height: 90px;
+        background-image: url(../../assets/flowers.svg);
+        background-size: 240px 240px;
+        background-position: -98px -123px;
+      }
+    }
   }
 }
