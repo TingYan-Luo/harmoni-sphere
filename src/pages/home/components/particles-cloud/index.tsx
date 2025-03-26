@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { BufferGeometry, Float32BufferAttribute, Vector3, Group, Points, Mesh, Box3 } from "three";
 import gsap from "gsap";
