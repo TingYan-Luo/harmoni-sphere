@@ -6,8 +6,5 @@
   ],
   "compilerOptions": {
     "types": ["vite-plugin-pages/client"]
-  },
-  "paths": {
-    "@/*": ["./src/*", "./src/*/index"]
   }
 }
