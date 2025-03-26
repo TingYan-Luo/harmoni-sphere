@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import ParticleCloud from "./components/particles-cloud";
+
 import InfiniteImageCarousel from "../../components/infinite-image-carousel";
+import ParticleCloud from "./components/particles-cloud";
+import FooterGrass from "./components/footer-grass";
 
 import SpeciesList from "./stastic/species-list.json";
 import TextEn from './stastic/text-en.json';
 import TextZh from './stastic/text-zh.json';
 import Websites from './stastic/websites.json';
+
 import styles from './index.module.less';
 
 /*
@@ -128,21 +131,7 @@ export default function Home() {
       </div>
       <div className={styles.footer}>
         <div className={styles['footer-text']}>{texts.end}</div>
-        <div className={styles['footer-grass']}>
-          <div className={`${styles['footer-grass-1']} ${styles['footer-grass-1-1']}`}></div>
-          <div className={`${styles['footer-grass-1']} ${styles['footer-grass-1-2']}`}></div>
-          <div className={`${styles['footer-grass-1']} ${styles['footer-grass-1-3']}`}></div>
-          <div className={`${styles['footer-grass-2']} ${styles['footer-grass-2-1']}`}></div>
-          <div className={`${styles['footer-grass-2']} ${styles['footer-grass-2-2']}`}></div>
-          <div className={`${styles['footer-grass-2']} ${styles['footer-grass-2-3']}`}></div>
-          <div className={`${styles['footer-grass-3']} ${styles['footer-grass-3-1']}`}></div>
-          <div className={`${styles['footer-grass-3']} ${styles['footer-grass-3-2']}`}></div>
-          <div className={styles['footer-flower-1']}></div>
-          <div className={styles['footer-flower-2']}></div>
-          <div className={styles['footer-flower-3']}></div>
-          <div className={styles['footer-flower-4']}></div>
-        </div>
-
+        <FooterGrass />
       </div>
     </div>
   );

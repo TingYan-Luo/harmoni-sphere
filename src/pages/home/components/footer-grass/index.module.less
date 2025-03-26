@@ -1,0 +1,135 @@
+@grassPath: '../../../../assets/grass.svg';
+@flowerPath: '../../../../assets/flowers.svg';
+
+.grass {
+  width: 100%;
+  height: 80px;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  background-color: rgb(127, 188, 127);
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+
+  &-1 {
+    position: absolute;
+
+    width: 65px;
+    height: 60px;
+    background-image: url(@grassPath);
+    background-size: 240px 240px;
+    background-position: -13px -56px;
+
+    &-1 {
+      top: -12px;
+      left: 15px;
+    }
+
+    &-2 {
+      top: -8px;
+      left: 95%;
+    }
+    &-3 {
+      top: -40px;
+      left: 40%;
+    }
+  }
+  &-2 {
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    
+    width: 74px;
+    height: 100px;
+    background-image: url(@grassPath);
+    background-size: 240px 240px;
+    background-position: -88px -40px;
+    
+    &-1 {
+      top: -62px;
+      left: 20%;  
+    }
+    &-2 {
+      top: -62px;
+      left: 80%;  
+      transform: rotateY(180deg);
+    }
+
+    &-3 {
+      top: -8px;
+      left: 60%;
+    }
+  }
+  &-3 {
+    position: absolute;
+    
+    width: 60px;
+    height: 86px;
+    background-image: url(@grassPath);
+    background-size: 240px 240px;
+    background-position: -164px -36px;
+
+    &-1 {
+      top: -55px;
+      left: 10%;
+    }
+    &-2 {
+      top: -46px;
+      left: 72%;
+    }
+  }
+  &-4 {
+    position: absolute;
+    top: -38px;
+    left: 320px;
+
+    
+    width: 65px;
+    height: 60px;
+    background-image: url(@grassPath);
+    background-size: 240px 240px;
+    background-position: -13px -56px
+  }
+}
+.flower {
+  &-1 {
+    position: absolute;
+    left: 15%;
+    top: -30px;
+    width: 56px;
+    height: 90px;
+    background-image: url(@flowerPath);
+    background-size: 240px 240px;
+    background-position: -30px -18px;
+  }
+  &-2 {
+    position: absolute;
+    left: 65%;
+    top: -80px;
+    width: 33px;
+    height: 90px;
+    background-image: url(@flowerPath);
+    background-size: 240px 240px;
+    background-position: -103px -18px;
+  }
+  &-3 {
+    position: absolute;
+    left: 50%;
+    top: -70px;
+    width: 44px;
+    height: 90px;
+    background-image: url(@flowerPath);
+    background-size: 240px 240px;
+    background-position: -167px -18px;
+  }
+  &-4 {
+    position: absolute;
+    left: 36%;
+    top: -42px;
+    width: 45px;
+    height: 90px;
+    background-image: url(@flowerPath);
+    background-size: 240px 240px;
+    background-position: -98px -123px;
+  }
+}
