@@ -109,7 +109,7 @@ export default function Home() {
         <div className={styles.websites}>
           {
             Websites.map(item => (
-              <div key={item.id} className={styles['websites-item']}>
+              <div key={item.id} className={styles['websites-item']} onClick={() => window.open(item.url)}>
                 <img 
                   className={styles['websites-item-img']} 
                   src={item.thumbnail} 
