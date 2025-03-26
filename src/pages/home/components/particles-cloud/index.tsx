@@ -18,14 +18,7 @@ export default function ModelParticles () {
   const positionsArray = useRef<Float32Array>(null);
 
   // 加载模型
-  const { scene } = useGLTF("public/Earth_Model.glb", true, undefined, (loader: any) => {
-    loader.load(
-      '/Earth_Model.glb',
-      (gltf) => console.log('Loaded:', gltf),
-      (progress) => console.log('Progress:', progress),
-      (error) => console.error('Error:', error)  // 查看详细错误
-    );
-  });
+  const { scene } = useGLTF("/Earth_Model.glb");
 
   useEffect(() => {
     let vertices: Vector3[] = [];
