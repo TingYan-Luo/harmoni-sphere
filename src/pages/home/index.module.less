@@ -263,13 +263,28 @@
     height: 400px;
     background-color: #ccd5ff;
     overflow: hidden;
+    text-align: center;
 
     &-text {
+      position: relative;
+      display: inline-block;
       margin-top: 48px;
       text-align: center;
       font-size: 50px;
       font-weight: 800;
       color: #fff;
+
+      &-bird {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: -31px;
+        right: -27px;
+        background-image: url(../../assets/bird.svg);
+        background-size: 200px 200px;
+        background-position: -114px -104px;
+        transform: scale(0.6);
+      }
     }
   }
 }

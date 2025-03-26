@@ -1,5 +1,11 @@
 @grassPath: '../../../../assets/grass.svg';
 @flowerPath: '../../../../assets/flowers.svg';
+@birdPath: '../../../../assets/bird.svg';
+
+@birdFly: -10px -5px;
+@birdLeft: -114px -10px;
+@birdCenter: -114px -104px;
+@birdRight: -10px -101px;
 
 .grass {
   width: 100%;
@@ -131,5 +137,26 @@
     background-image: url(@flowerPath);
     background-size: 240px 240px;
     background-position: -98px -123px;
+  }
+}
+
+.bird {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-image: url(@birdPath);
+  background-size: 200px 200px;
+
+  &-bottom {
+    top: -65px;
+    right: 32%;
+    background-position: @birdLeft;
+  }
+
+  &-top {
+    top: -240%;
+    left: 8%;
+    transform: scale(0.6);
+    background-position: @birdFly;
   }
 }

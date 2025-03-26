@@ -19,6 +19,8 @@ export default function FooterGrass() {
       <div className={styles['flower-2']}></div>
       <div className={styles['flower-3']}></div>
       <div className={styles['flower-4']}></div>
+      <div className={`${styles['bird']} ${styles['bird-bottom']}`} />
+      <div className={`${styles['bird']} ${styles['bird-top']}`} />
     </div>
   )
 }
