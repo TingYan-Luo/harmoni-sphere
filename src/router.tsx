@@ -7,11 +7,11 @@ import Home from "./pages/home/index";
  */
 export default [
   {
-    path: '/home',
+    path: '/',
     element: <Home />,
   },
   {
-    path: '/',
+    path: '/index',
     element: <Index />,
   }
 ]
