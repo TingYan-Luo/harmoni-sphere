@@ -5,6 +5,7 @@ import { OrbitControls } from "@react-three/drei";
 import InfiniteImageCarousel from "../../components/infinite-image-carousel";
 import ParticleCloud from "./components/particles-cloud";
 import FooterGrass from "./components/footer-grass";
+import DetailModal from "./components/detail-modal";
 
 import SpeciesList from "./stastic/species-list.json";
 import TextEn from './stastic/text-en.json';
@@ -22,12 +23,26 @@ export default function Home() {
   const [activeId, setActiveId] = useState<string>();
   const [texts, setTexts] = useState<Record<string, any>>({});
   const [language, setLanguage] = useState<'en' | 'zh'>('en');
+  const [detail, setDetail] = useState<any>();
   const getImagesList = async () => {
     setImages(SpeciesList);
   };
-  const onImageClick = (id: string, src: any) => {
-    console.log('🚀 ~ onImageClick ~ src:', src);
-    setActiveId(id === activeId ? undefined : id);
+  const onImageClick = (id: string, data: any) => {
+    console.log('🚀 ~ onImageClick ~ data:', data);
+    const isActive = activeId !== id;
+    if (isActive) {
+      const index = images.findIndex(item => item.id === id);
+      setActiveId(id);
+      setDetail({
+        ...data,
+        title: language === 'zh' ? data.name : data.scientificName,
+        content: language === 'zh' ? data.desc_zh : data.desc,
+        index,
+      });
+    } else {
+      setActiveId(undefined);
+      setDetail(undefined);
+    }
   };
 
   useEffect(() => {
@@ -99,6 +114,7 @@ export default function Home() {
             onItemClick={onImageClick}
           />
         </div>
+        <DetailModal open={!!detail} onClose={() => setDetail(undefined)} data={detail} />
       </div>
       <div className={styles.about}>
         <div className={styles.tip}>

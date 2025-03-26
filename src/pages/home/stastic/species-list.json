@@ -3,60 +3,80 @@
     "id": 2481513,
     "scientificName": "Leptoptilos dubius",
     "name": "大秃鹳",
+    "desc_zh": "大秃鹳是现存体型最大的鹳类，成年个体可达1.5米高。它们曾广泛分布于东南亚，但因湿地破坏和非法狩猎，全球种群已不足1000只。这种鸟类以腐肉为食，在生态系统中扮演着重要的清道夫角色。印度阿萨姆邦的最后栖息地正受到城市化威胁。",
+    "desc": "The Greater Adjutant, one of the largest stork species, stands up to 1.5 meters tall. Once widespread across Southeast Asia, fewer than 1,000 individuals remain due to wetland destruction and hunting. These scavengers play a vital ecological role. Their last stronghold in Assam, India faces urban encroachment.",
     "image": "https://media.istockphoto.com/id/1385454534/photo/greater-adjutant-in-the-zoo.jpg?s=612x612&w=0&k=20&c=ZsJ8xpaFBRyJD0rJsG1bZ61fqV7TeJC8l56jfYA1v1o="
   },
   {
     "id": 2481485,
     "scientificName": "Gyps bengalensis",
     "name": "白背兀鹫",
+    "desc_zh": "白背兀鹫是亚洲特有的秃鹫物种，曾广泛分布于南亚次大陆。因食用含双氯芬酸（兽用消炎药）的牲畜尸体，其种群在1990-2000年间锐减99.9%，成为全球数量下降最快的鸟类之一。它们翼展可达2.5米，集群觅食时能迅速清理动物尸体，有效防止疾病传播。印度已禁用该药物并建立人工繁殖中心。",
+    "desc": "The White-rumped Vulture, endemic to Asia, was once abundant across the Indian subcontinent. Their population crashed by 99.9% during 1990-2000 due to diclofenac-contaminated livestock carcasses, marking the fastest decline of any bird species. With 2.5m wingspans, their scavenging behavior prevents disease spread. India has banned the drug and established captive breeding programs.",
     "image": "https://media.istockphoto.com/id/462925945/photo/white-rumped-vulture-rare-bird.jpg?s=612x612&w=0&k=20&c=DgfyhNUtPJb5Pax7-FsDdn-37hrVxYs5kvxiXHd4iU4="
   },
   {
     "id": 2481498,
     "scientificName": "Sarcogyps calvus",
     "name": "秃鹫",
+    "desc_zh": "秃鹫（红头秃鹫）是南亚特有的濒危物种，以其鲜红的裸露头部闻名。过去30年种群数量下降90%以上，主要因食用含兽药双氯芬酸的牲畜尸体导致肾衰竭。它们具有独特的社会结构，常形成数十只的觅食群体，能在10分钟内彻底清理一具水牛尸体。柬埔寨和印度建立了专门的'秃鹫餐厅'，提供安全食物来源。",
+    "desc": "The Red-headed Vulture, endemic to South Asia, is distinguished by its bright red bare head. With over 90% population decline in 30 years due to diclofenac-induced kidney failure, they exhibit unique social behavior - feeding flocks can strip a buffalo carcass in 10 minutes. 'Vulture restaurants' in Cambodia and India now provide safe food sources.",
     "image": "https://media.istockphoto.com/id/1992715862/photo/indian-red-headed-vulture-in-the-forest-of-pench-national-park.jpg?s=612x612&w=0&k=20&c=Wi7OBqkbKhxmquJicwCR3gf8F0Dqu41sPIKgksHLQsw="
   },
   {
     "id": 2481509,
     "scientificName": "Haliaeetus leucoryphus",
     "name": "玉带海雕",
+    "desc_zh": "玉带海雕是亚洲中部稀有的猛禽，翼展可达2.3米，尾羽中段的白色横纹是其标志性特征。全球种群不足2500只，主要威胁来自湿地萎缩和农药污染。它们擅长高空盘旋捕鱼，巢穴直径可达2米，多建于悬崖或高大乔木上。蒙古国通过卫星追踪发现其迁徙路线跨越喜马拉雅山脉，单次飞行距离最远记录为380公里。",
+    "desc": "The Pallas's Fish Eagle, a rare raptor in Central Asia, boasts a 2.3m wingspan and distinctive white tail band. With fewer than 2,500 individuals globally, it faces wetland loss and pesticide threats. Skilled at aerial fishing, their 2m-wide nests perch on cliffs or tall trees. Satellite tracking in Mongolia revealed Himalayan migrations with record 380km non-stop flights.",
     "image": "https://media.istockphoto.com/id/2130920699/photo/pallass-fish-eagle-also-known-as-pallass-sea-eagle-or-band-tailed-fish-eagle-is-a-large.jpg?s=612x612&w=0&k=20&c=GUZJCvvHhHIWY209rw1URqjUg0mGz_uEdxckxaDsDhA="
   },
   {
     "id": 2498254,
     "scientificName": "Anser cygnoides",
     "name": "鸿雁",
+    "desc_zh": "鸿雁是中国传统文化中'鸿雁传书'的象征，现存野生种群约6万只但持续下降。作为家鹅的野生祖先，它们保持每年3000公里的迁徙习性，从西伯利亚到长江中下游越冬。蒙古东部草原的过度放牧导致其繁殖成功率下降40%，而鄱阳湖的渔网缠绕每年造成约2000只死亡。其V字形编队飞行可节省70%迁徙能量。",
+    "desc": "The Swan Goose, inspiration for China's 'messenger goose' folklore, has a declining wild population of 60,000. Ancestor of domestic geese, they migrate 3,000km annually to Yangtze River wetlands. Overgrazing in Mongolia reduces breeding success by 40%, while fishing nets in Poyang Lake kill 2,000 yearly. Their V-formation flights save 70% migration energy.",
     "image": "https://media.istockphoto.com/id/2204220289/photo/swan-goose.jpg?s=612x612&w=0&k=20&c=0o5GnjF9K6uJSTRmnZcx7IzlJvzn45gCdJonbFSu8SI="
   },
   {
     "id": 2481514,
     "scientificName": "Aythya baeri",
     "name": "青头潜鸭",
+    "desc_zh": "青头潜鸭是全球极危的迁徙性鸭类，目前全球成年个体不足1000只。它们依赖干净的淡水湿地，因农业排水和杀虫剂污染导致繁殖地锐减。这种鸭子以'倒立'姿势在水底觅食水生植物，潜水时间可达40秒。中国鄱阳湖是其主要越冬地，2020年保护行动使当地种群回升至400余只。",
+    "desc": "The Baer's Pochard, a critically endangered diving duck, has fewer than 1,000 mature individuals globally. Dependent on unpolluted freshwater wetlands, agricultural drainage has decimated its habitat. They feed upside-down on aquatic plants, diving for up to 40 seconds. China's Poyang Lake conservation increased wintering populations to 400+ in 2020.",
     "image": "https://media.istockphoto.com/id/1248701726/photo/tufted-duck-aythya-fuligula-with-nine-ducklings.jpg?s=612x612&w=0&k=20&c=CwSMgDTdpIWqeOPS7HZeXtCD2gISOk2JKDlTBkmfrKQ="
   },
   {
     "id": 2481515,
     "scientificName": "Emberiza aureola",
     "name": "黄胸鹀",
+    "desc_zh": "黄胸鹀因被中国南方称为'禾花雀'而遭大规模捕食，过去30年种群下降95%。它们每年迁徙8000公里往返西伯利亚和东南亚，雄鸟金黄色的胸羽在繁殖期尤为鲜艳。2017年中国将其列为国家一级保护动物后，广东地区破获多起非法捕猎案件，每只黑市价曾高达300元。",
+    "desc": "Known as 'Rice Bird' in China, the Yellow-breasted Bunting population crashed by 95% in 30 years due to overhunting. Migrating 8,000km between Siberia and Southeast Asia, males display vibrant golden plumage. After becoming China's Class I protected species in 2017, Guangdong authorities intercepted illegal trades where each bird sold for $45.",
     "image": "https://media.istockphoto.com/id/1286724473/photo/african-golden-breasted-bunting-in-kruger-national-park-south-africa.jpg?s=612x612&w=0&k=20&c=9aZ3Jyvv4r6sNOR-DX00gv4kldODjTpJ_v-aHGhS4Ns="
   },
   {
     "id": 2481516,
     "scientificName": "Grus japonensis",
     "name": "丹顶鹤",
+    "desc_zh": "丹顶鹤是东亚文化中的'仙鹤'，现存野生种群约2800只。它们实行终身配偶制，求偶时的'鹤舞'包含超过20种复杂动作。黑龙江扎龙自然保护区通过人工投喂维持了300余只越冬群体，但近亲繁殖导致幼鹤存活率不足40%。日本北海道采取人工孵化放归，成功建立200只的留居种群。",
+    "desc": "The Red-crowned Crane, revered as 'sacred crane' in East Asia, has about 2,800 wild individuals. Their monogamous pairs perform 20+ courtship dances. China's Zhalong Nature Reserve sustains 300 wintering cranes, but inbreeding causes <40% chick survival. Hokkaido's reintroduction program established a 200-strong resident population.",
     "image": "https://media.istockphoto.com/id/920140764/photo/japanese-crane.jpg?s=612x612&w=0&k=20&c=jb_cYfNtSC5noG25YWWz_Nk6ofdO4KEoGaEaYWbbBkQ="
   },
   {
     "id": 2481517,
     "scientificName": "Pelecanus crispus",
     "name": "卷羽鹈鹕",
+    "desc_zh": "卷羽鹈鹕是现存最重的飞鸟之一，翼展可达3.5米。希腊克尔基尼湖栖息着全球10%的种群，它们合作捕鱼的'U形阵'能驱赶鱼群至浅水区。因喉囊可容纳13升水，常被误认为储存鱼的'口袋'。风电设备导致其迁徙碰撞死亡率上升，巴尔干国家正在调整风机布局。",
+    "desc": "The Dalmatian Pelican, among the heaviest flying birds, has a 3.5m wingspan. Greece's Lake Kerkini holds 10% of global population, where they fish in coordinated U-formations. Their 13-liter throat pouch is often mistaken for food storage. Wind turbine collisions prompted Balkan countries to adjust wind farm layouts.",
     "image": "https://media.istockphoto.com/id/537821996/photo/dalmatian-pelicans-in-the-lake-of-kerkini.jpg?s=612x612&w=0&k=20&c=zfffkMWL__eUejiGeFimXJLLcMjpTUUFcvzwGs22cyc="
   },
   {
     "id": 2481518,
     "scientificName": "Ciconia nigra",
     "name": "黑鹳",
+    "desc_zh": "黑鹳是优雅的大型涉禽，体长可达1.1米，金属光泽的黑羽与鲜红长腿形成鲜明对比。中国境内现存不足500对，主要栖息于山西灵空山等悬崖峭壁区域。它们对水质要求极高，只在清澈溪流捕食鱼类，因此被称为'水质监测鸟'。2022年黄河湿地保护工程使其巢穴数量增加了15%，但高压电线仍是幼鸟主要致死原因。",
+    "desc": "The Black Stork, an elegant wader reaching 1.1m long, sports metallic-black plumage and vivid red legs. With fewer than 500 breeding pairs in China, they nest on cliffs like Lingkong Mountain. As indicators of water purity, they only fish in clear streams. While 2022 Yellow River conservation increased nests by 15%, power lines remain the leading cause of juvenile mortality.",
     "image": "https://media.istockphoto.com/id/1478127795/photo/black-stork-with-chickens-in-the-nest-wildlife-scene-from-nature-bird-black-stork-with-red.jpg?s=612x612&w=0&k=20&c=WBPn1MT8U6pjl5JiuX6eYvDNoV1Buk48Qevds75o7TA="
   },
 
@@ -64,120 +84,160 @@
     "id": 5219434,
     "scientificName": "Panthera tigris altaica",
     "name": "东北虎",
+    "desc_zh": "东北虎是现存最大的猫科动物，成年雄性体重可达300公斤。中俄边境的森林栖息地不足导致野生种群仅存约500只。盗猎和虎骨贸易仍是主要威胁。2010年中俄建立跨境保护区，使种群数量出现缓慢回升。冬季厚达5厘米的皮下脂肪帮助它们抵御-40℃的严寒。",
+    "desc": "The Amur tiger, the world's largest cat, weighs up to 300kg. With only about 500 left in the wild, habitat loss and poaching remain critical threats. The 2010 China-Russia cross-border reserve has enabled gradual recovery. Their 5cm-thick subcutaneous fat layer survives -40℃ winters.",
     "image": "https://media.istockphoto.com/id/949472768/photo/tiger-portrait.jpg?s=612x612&w=0&k=20&c=cPI-hIwXxLwRYcGW3HaC_3C6J_MMIE_BbMjI9Ac0XNE="
   },
   {
     "id": 5219435,
     "scientificName": "Panthera pardus orientalis",
     "name": "远东豹",
-    "image": "https://media.istockphoto.com/id/1222575532/photo/amur-leopard.jpg?s=612x612&w=0&k=20&c=KcQkXAsXb72pAdb04v900qE46zncf5r6dkDQCrLzc10="
+    "image": "https://media.istockphoto.com/id/1222575532/photo/amur-leopard.jpg?s=612x612&w=0&k=20&c=KcQkXAsXb72pAdb04v900qE46zncf5r6dkDQCrLzc10=",
+    "desc_zh": "远东豹是世界上最稀有的猫科动物，全球野生个体仅存约110只，主要分布在俄罗斯远东和中国东北边境。它们拥有厚达7厘米的冬季皮毛以适应-30℃的严寒，领地范围可达500平方公里。中俄跨境保护区的建立使种群从30只逐步恢复，但非法狩猎和森林火灾仍威胁其生存。每只远东豹的斑点图案都是独一无二的，如同人类的指纹。",
+    "desc": "The Amur leopard, the world's rarest big cat with only 110 wild individuals, inhabits the Russia-China border region. Their 7cm-thick winter fur survives -30℃ temperatures across 500km² territories. Cross-border conservation helped recovery from 30 individuals, though poaching and wildfires persist. Each leopard's rosette pattern is unique like human fingerprints."
   },
   {
     "id": 5219436,
     "scientificName": "Rhinoceros sondaicus",
     "name": "爪哇犀牛",
-    "image": "https://media.istockphoto.com/id/1295039680/photo/javan-rhino-in-forest-clearing.jpg?s=612x612&w=0&k=20&c=EnBPMR8Kp5DWVIILYzeh9nwP3bGnrVPkz8bJn16aYx8="
+    "image": "https://media.istockphoto.com/id/1295039680/photo/javan-rhino-in-forest-clearing.jpg?s=612x612&w=0&k=20&c=EnBPMR8Kp5DWVIILYzeh9nwP3bGnrVPkz8bJn16aYx8=",
+    "desc_zh": "全球最濒危的大型哺乳动物，仅存72头分布于印尼乌戎库隆国家公园。它们单角长度不超过25厘米，皮肤褶皱形成独特的铠甲状纹理。偷猎和栖息地碎片化导致近亲繁殖严重。2011年越南最后一只爪哇犀的死亡宣告该亚种灭绝。",
+    "desc": "With only 72 individuals in Ujung Kulon National Park, this is Earth's rarest large mammal. Their 25cm-long single horn and armored skin folds are distinctive. Poaching and inbreeding threaten survival. The Vietnam subspecies went extinct in 2011 when the last individual was found dead."
   },
   {
     "id": 5219437,
     "scientificName": "Dicerorhinus sumatrensis",
     "name": "苏门答腊犀牛",
-    "image": "https://media.istockphoto.com/id/1324171917/photo/sumatran-rhinoceros.jpg?s=612x612&w=0&k=20&c=AEmbocMmeJDiSrdZugPNh-AkjS_tQhEU7HjorSYMSpo="
+    "image": "https://media.istockphoto.com/id/1324171917/photo/sumatran-rhinoceros.jpg?s=612x612&w=0&k=20&c=AEmbocMmeJDiSrdZugPNh-AkjS_tQhEU7HjorSYMSpo=",
+    "desc_zh": "现存最小的犀牛物种，野生数量不足80头，全身覆盖红棕色毛发。它们是犀牛中仅存的'披毛犀'，保留着冰河时期的原始特征。马来西亚于2019年宣布该物种野外灭绝，现仅存于印尼的零星雨林。苏门答腊犀牛会通过特殊的口哨声交流，这种能力在其他犀牛中未曾发现。",
+    "desc": "The smallest rhino species with under 80 wild individuals, they're the last hairy rhinos with Ice Age traits. Declared extinct in Malaysia (2019), they now survive only in Indonesian rainforests. Unique among rhinos, they communicate through whistles - an ability unseen in other species."
   },
   {
     "id": 5219438,
     "scientificName": "Elephas maximus borneensis",
     "name": "婆罗洲象",
-    "image": "https://media.istockphoto.com/id/824984936/photo/borneo-elephant-in-sabah-borneo.jpg?s=612x612&w=0&k=20&c=eaeS8lc6nQ8od71qrnK6vhSDDTULmb0oYsI_KdpXFnE="
+    "image": "https://media.istockphoto.com/id/824984936/photo/borneo-elephant-in-sabah-borneo.jpg?s=612x612&w=0&k=20&c=eaeS8lc6nQ8od71qrnK6vhSDDTULmb0oYsI_KdpXFnE=",
+    "desc_zh": "婆罗洲象是亚洲象中最小的亚种，成年肩高不足2.5米，因栖息地丧失现仅存1500头。它们拥有异常温顺的性格和超长的尾巴，能垂到地面。马来西亚沙巴州的棕榈油种植园扩张导致其栖息地在过去20年缩减60%，象群被迫进入人类居住区觅食。基因研究发现这是约30万年前与大陆象隔离进化的独特种群。",
+    "desc": "The smallest Asian elephant subspecies (<2.5m tall) with only 1,500 left. Known for docile temperament and exceptionally long tails touching the ground. Palm oil plantations in Sabah reduced habitats by 60% in 20 years, forcing human-elephant conflicts. Genetic studies reveal 300,000-year isolation from mainland elephants."
   },
   {
     "id": 5219439,
     "scientificName": "Pongo abelii",
     "name": "苏门答腊猩猩",
-    "image": "https://media.istockphoto.com/id/1801435189/photo/young-female-orangutang-on-the-tree-in-north-sumtra-jungles.webp?a=1&b=1&s=612x612&w=0&k=20&c=f4MrEX4wk44UdUkkPNGIXsdVeP1ywE-pE6HDQKBYfIo="
+    "image": "https://media.istockphoto.com/id/1801435189/photo/young-female-orangutang-on-the-tree-in-north-sumtra-jungles.webp?a=1&b=1&s=612x612&w=0&k=20&c=f4MrEX4wk44UdUkkPNGIXsdVeP1ywE-pE6HDQKBYfIo=",
+    "desc_zh": "苏门答腊猩猩是智商最高的类人猿之一，能使用工具获取蜂蜜和白蚁。过去百年种群下降80%，现存约14,000只。雌性猩猩每6-8年才生育一次，是哺乳动物中最长的生育间隔。印尼的棕榈油开发每天摧毁相当于300个足球场的猩猩栖息地。救援中心训练孤儿猩猩的攀爬能力，野放成功率不足40%。",
+    "desc": "Among the smartest great apes, they use tools to extract honey and termites. Population dropped 80% in a century to 14,000. Females breed only every 6-8 years - the longest interval in mammals. Indonesia's palm oil industry destroys 300 football fields of habitat daily. Orphan rehabilitation has <40% success rate."
   },
   {
     "id": 5219440,
     "scientificName": "Gorilla beringei beringei",
     "name": "山地大猩猩",
-    "image": "https://media.istockphoto.com/id/168494782/photo/gorilla-feeding.webp?a=1&b=1&s=612x612&w=0&k=20&c=2eUpVV_nnOVLPxeQOHm4sh9lnE5CUEgffylxijWcMhA="
+    "image": "https://media.istockphoto.com/id/168494782/photo/gorilla-feeding.webp?a=1&b=1&s=612x612&w=0&k=20&c=2eUpVV_nnOVLPxeQOHm4sh9lnE5CUEgffylxijWcMhA=",
+    "desc_zh": "山地大猩猩是现存最大的灵长类动物，成年雄性可重达200公斤。全球仅存约1000只，分布于刚果、卢旺达和乌干达交界的维龙加山脉。它们以植物为食，每天需消耗30公斤食物。盗猎和埃博拉病毒曾使种群锐减，但近年保护措施使其数量增长17%。每只大猩猩的鼻纹都独一无二，研究人员借此进行个体识别。",
+    "desc": "The Mountain Gorilla, the largest living primate, weighs up to 200kg. With only 1,000 left in the Virunga Mountains, they consume 30kg of plants daily. Poaching and Ebola once decimated populations, but conservation efforts enabled 17% growth. Each gorilla's unique nose print allows individual identification."
   },
   {
     "id": 5219441,
     "scientificName": "Lynx pardinus",
     "name": "伊比利亚猞猁",
-    "image": "https://media.istockphoto.com/id/2022247411/photo/three-iberian-lynx-in-the-sierra-de-andujar-spain.webp?a=1&b=1&s=612x612&w=0&k=20&c=SaozOHSmUYcclzoFXTADVBqdvJG-u05nCJJcSicfDgc="
+    "image": "https://media.istockphoto.com/id/2022247411/photo/three-iberian-lynx-in-the-sierra-de-andujar-spain.webp?a=1&b=1&s=612x612&w=0&k=20&c=SaozOHSmUYcclzoFXTADVBqdvJG-u05nCJJcSicfDgc=",
+    "desc_zh": "伊比利亚猞猁是世界上最濒危的猫科动物，21世纪初曾仅剩94只。通过人工繁殖和野化训练，西班牙安达卢西亚地区的种群已恢复至400余只。它们依赖欧洲野兔作为主要食物来源，兔瘟病爆发曾导致其数量骤减。猞猁耳尖的黑色簇毛能增强听力，可探测60米外兔子的动静。",
+    "desc": "The Iberian Lynx, once down to 94 individuals, has rebounded to 400+ in Andalusia through captive breeding. Dependent on European rabbits as prey, myxomatosis outbreaks nearly caused extinction. Their iconic ear tufts enhance hearing to detect rabbits 60 meters away."
   },
   {
     "id": 5219442,
     "scientificName": "Canis simensis",
     "name": "埃塞俄比亚狼",
-    "image": "https://media.istockphoto.com/id/1357644433/photo/ethiopian-wolf-canis-simensis-pack-in-the-nature.webp?a=1&b=1&s=612x612&w=0&k=20&c=L4vOu6hjQ9ZcoTy5mZwfu0gYxhqHdJg5xnuFRwuB8rQ="
+    "image": "https://media.istockphoto.com/id/1357644433/photo/ethiopian-wolf-canis-simensis-pack-in-the-nature.webp?a=1&b=1&s=612x612&w=0&k=20&c=L4vOu6hjQ9ZcoTy5mZwfu0gYxhqHdJg5xnuFRwuB8rQ=",
+    "desc_zh": "非洲最濒危的食肉动物，仅存500余只分布于埃塞俄比亚高地。它们以啮齿动物为食，每天需要捕捉15-20只老鼠。家犬传播的狂犬病曾导致75%的种群死亡，现在疫苗接种计划已覆盖主要栖息地。这种狼实行严格的等级制度，只有首领夫妇才有繁殖权。",
+    "desc": "Africa's most endangered carnivore with 500+ individuals in Ethiopian highlands. They hunt 15-20 rodents daily. Rabies from domestic dogs once killed 75% of the population, now controlled by vaccination. Packs have strict hierarchies where only alpha pairs breed."
   },
   {
     "id": 5219443,
     "scientificName": "Equus przewalskii",
     "name": "普氏野马",
-    "image": "https://media.istockphoto.com/id/609085324/photo/przewalskis-horses.webp?a=1&b=1&s=612x612&w=0&k=20&c=E-jIh57twimdqihePtcpVbw-h8HngrAUyr2-NjVtANI="
+    "image": "https://media.istockphoto.com/id/609085324/photo/przewalskis-horses.webp?a=1&b=1&s=612x612&w=0&k=20&c=E-jIh57twimdqihePtcpVbw-h8HngrAUyr2-NjVtANI=",
+    "desc_zh": "世界上最后的真正野生马，20世纪60年代曾野外灭绝。通过动物园个体重新引入，蒙古和中国西北现有约760匹。它们比家马多一对染色体（66条），能耐受-40℃严寒。敦煌自然保护区采用无人机监测技术，成功将野放存活率提升至85%。",
+    "desc": "The last truly wild horse, extinct in the wild during 1960s, now has 760 individuals reintroduced to Mongolia and China. With 66 chromosomes (vs 64 in domestic horses), they survive -40℃ winters. Drone monitoring in Dunhuang Reserve increased survival rate to 85%."
   },
   {
     "id": 2308289,
     "scientificName": "Eubalaena japonica",
     "name": "北太平洋露脊鲸",
-    "image": "https://media.istockphoto.com/id/1586456748/photo/orca-with-tall-dorsal-fin-in-seward-alaska.webp?a=1&b=1&s=612x612&w=0&k=20&c=c9hK3z7u8ZqfCUz3wU6BWBzp6IwiqmrfcoJnSqfwHYQ="
+    "image": "https://media.istockphoto.com/id/1586456748/photo/orca-with-tall-dorsal-fin-in-seward-alaska.webp?a=1&b=1&s=612x612&w=0&k=20&c=c9hK3z7u8ZqfCUz3wU6BWBzp6IwiqmrfcoJnSqfwHYQ=",
+    "desc_zh": "全球最稀有的鲸类之一，现存不足300头。它们游速缓慢且习惯靠近海岸，在捕鲸时代几乎灭绝。阿拉斯加海域的个体能长到18米长，头部覆盖着独特的鲸虱群落形成白斑。渔网缠绕和船舶撞击每年导致约5%的种群损失，美国海岸警卫队已在其迁徙路线实施限速令。",
+    "desc": "One of Earth's rarest whales with under 300 individuals. Nearly exterminated by whaling due to slow, coastal habits. Alaska's 18m-long specimens host unique whale lice colonies forming white patches. With 5% annual loss from ship strikes, the USCG enforces speed limits on migration routes."
   },
   {
     "id": 2308291,
     "scientificName": "Dermochelys coriacea",
     "name": "棱皮龟",
-    "image": "https://media.istockphoto.com/id/1224636544/photo/leatherback-turtle.webp?a=1&b=1&s=612x612&w=0&k=20&c=ABWQNB7boXFF5JcyjENkC3u4NUc2DlmfkvyZXHJ3ETo="
+    "image": "https://media.istockphoto.com/id/1224636544/photo/leatherback-turtle.webp?a=1&b=1&s=612x612&w=0&k=20&c=ABWQNB7boXFF5JcyjENkC3u4NUc2DlmfkvyZXHJ3ETo=",
+    "desc_zh": "棱皮龟是现存最大的海龟，体长可达2.7米，重900公斤。其独特的革质背甲没有角质鳞片，而是覆盖着油滑的皮肤。它们每年迁徙1.6万公里寻找水母，但因误食塑料袋（酷似水母）导致死亡率高达30%。马来西亚兰卡威的海滩曾记录到单巢产卵104枚的罕见现象，但全球繁殖雌龟已不足3.4万只。",
+    "desc": "The leatherback, the largest sea turtle reaching 2.7m and 900kg, has a unique oily skin-covered shell instead of scales. Migrating 16,000km annually for jellyfish, 30% die from plastic bag ingestion. Though a nest in Langkawi held 104 eggs, fewer than 34,000 breeding females remain globally."
   },
   {
     "id": 2308292,
     "scientificName": "Chelonia mydas",
     "name": "绿海龟",
-    "image": "https://media.istockphoto.com/id/1438622332/photo/green-sea-turtle-swimming-below-the-oceans-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=McTm4pMVpmajPDceZ2SlaEnOP0qyT2MUeZ-L3S8cUXU="
+    "image": "https://media.istockphoto.com/id/1438622332/photo/green-sea-turtle-swimming-below-the-oceans-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=McTm4pMVpmajPDceZ2SlaEnOP0qyT2MUeZ-L3S8cUXU=",
+    "desc_zh": "绿海龟因其脂肪呈绿色而得名，成年体长1.5米，寿命可达80年。它们依赖珊瑚礁的海草床生存，但全球变暖导致雌性幼龟比例飙升至99%（性别由沙温决定）。中国南海诸岛实施的人工遮阳网项目，成功将雌性比例回调至70%。每只绿海龟的鳞片图案都是独特的，研究人员借此追踪个体迁徙路线。",
+    "desc": "Named for green-colored fat, these 1.5m-long turtles live 80 years. Dependent on seagrass beds, climate change causes 99% female hatchlings (sex determined by sand temperature). China's shading net project restored female ratio to 70%. Each turtle's unique scale patterns help track migrations."
   },
   {
     "id": 2308293,
     "scientificName": "Sphyrna mokarran",
     "name": "无沟双髻鲨",
-    "image": "https://media.istockphoto.com/id/1303691694/photo/hammerhead-swimming-in-the-blue.webp?a=1&b=1&s=612x612&w=0&k=20&c=GG4AOuGpffzGvAFA2rwLmvvjTLNtHWNvXswckWWw68Q="
+    "image": "https://media.istockphoto.com/id/1303691694/photo/hammerhead-swimming-in-the-blue.webp?a=1&b=1&s=612x612&w=0&k=20&c=GG4AOuGpffzGvAFA2rwLmvvjTLNtHWNvXswckWWw68Q=",
+    "desc_zh": "无沟双髻鲨拥有最宽的头部结构（占体长50%），内置电磁感应器能探测1米外的心跳。因鱼翅贸易导致种群在过去75年下降80%，现存约2.5万条。巴哈马群岛建立的禁渔区使幼鲨存活率提高40%，但其妊娠期长达11个月，每胎仅产6-12条幼鲨。独特的T型头部能产生升力，使其成为最敏捷的鲨鱼之一。",
+    "desc": "With the widest head (50% body length), they detect heartbeats 1m away via electroreceptors. Shark fin trade caused 80% decline in 75 years, leaving ~25,000. Bahamas' sanctuary increased pup survival by 40%, but 11-month gestation yields only 6-12 pups. Their T-shaped head provides unmatched agility."
   },
   {
     "id": 2308294,
     "scientificName": "Rhincodon typus",
     "name": "鲸鲨",
+    "desc_zh": "作为现存最大的鱼类，鲸鲨体长可达18米。尽管全球禁捕，每年仍有约1000条因鱼鳍贸易被非法猎杀。它们的皮肤布满星状斑点，如同海底的星空。菲律宾是全球最佳观测地，但过度旅游已影响其洄游路线。每条鲸鲨的斑点图案都是独一无二的。",
+    "desc": "The whale shark, reaching 18m long, is the largest fish species. Despite global protection, about 1,000 are illegally killed annually for fins. Their star-patterned skin resembles underwater constellations. While Philippine ecotourism offers sightings, over-tourism disrupts migration. Each individual's spot pattern is unique.",
     "image": "https://media.istockphoto.com/id/533256047/photo/whale-shark-feeding-in-oslob-philippines.webp?a=1&b=1&s=612x612&w=0&k=20&c=rjAsQljfEcqOQlzXmLIAMP96XTcShHzYrW1fYuWt32k="
   },
   {
     "id": 2308295,
     "scientificName": "Carcharodon carcharias",
     "name": "大白鲨",
-    "image": "https://media.istockphoto.com/id/1438305496/photo/great-white-shark-turns-below-the-oceans-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=C3O62s49UQMI2AINW8ZHbUW9yL8W_9p1UqUbpeHbIt4="
+    "image": "https://media.istockphoto.com/id/1438305496/photo/great-white-shark-turns-below-the-oceans-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=C3O62s49UQMI2AINW8ZHbUW9yL8W_9p1UqUbpeHbIt4=",
+    "desc_zh": "大白鲨是海洋顶级掠食者，体长可达6.1米，拥有动物界最强的咬合力（18,000牛顿）。其皮肤覆盖着数百万微小齿状鳞片，能减少游动阻力。因误捕和鲨鱼鳍贸易，全球种群在过去50年下降71%。南非海域的个体被发现会进行跨洋迁徙，最远记录是从南非到澳大利亚的1.2万公里往返旅程。",
+    "desc": "The apex predator reaches 6.1m with the strongest bite force (18,000 newtons) in the animal kingdom. Its skin contains millions of tooth-like scales reducing drag. Global population dropped 71% in 50 years due to bycatch and finning. South African individuals migrate 12,000km round-trip to Australia."
   },
   {
     "id": 2308296,
     "scientificName": "Eretmochelys imbricata",
     "name": "玳瑁",
-    "image": "https://media.istockphoto.com/id/535939461/photo/hawksbill-turtle-eretmochelys-imbricata.webp?a=1&b=1&s=612x612&w=0&k=20&c=M6DA07DGmWT_Z2lnehYP6ewakM4CDp8WqjlB7TzEjwo="
+    "image": "https://media.istockphoto.com/id/535939461/photo/hawksbill-turtle-eretmochelys-imbricata.webp?a=1&b=1&s=612x612&w=0&k=20&c=M6DA07DGmWT_Z2lnehYP6ewakM4CDp8WqjlB7TzEjwo=",
+    "desc_zh": "玳瑁因其精美的鹰嘴状喙和彩色鳞甲闻名，是珊瑚礁生态系统的'园丁'。它们以有毒海绵为食，帮助维持珊瑚健康。过去百年因龟甲工艺品贸易导致种群下降80%，现存约2.5万只繁殖雌龟。印度尼西亚的保护区采用人工孵化技术，将幼龟存活率从1%提升至15%。每只玳瑁的鳞片花纹都独一无二，如同人类的指纹。",
+    "desc": "Known for hawk-like beaks and colorful shells, they're 'gardeners' of coral reefs by eating toxic sponges. Population dropped 80% in a century due to tortoiseshell trade, leaving 25,000 breeding females. Indonesian hatcheries increased hatchling survival from 1% to 15%. Each turtle's scute pattern is unique like fingerprints."
   },
   {
     "id": 2308297,
     "scientificName": "Physeter macrocephalus",
     "name": "抹香鲸",
-    "image": "https://media.istockphoto.com/id/1032493108/photo/sperm-whale.webp?a=1&b=1&s=612x612&w=0&k=20&c=9ERgUrJ1nug2TAUxS0nQmiChzHmz_oGsdwIHiRkYMhI="
+    "image": "https://media.istockphoto.com/id/1032493108/photo/sperm-whale.webp?a=1&b=1&s=612x612&w=0&k=20&c=9ERgUrJ1nug2TAUxS0nQmiChzHmz_oGsdwIHiRkYMhI=",
+    "desc_zh": "抹香鲸拥有动物界最大的大脑（重达7.8公斤），能下潜至3000米深海捕食大王乌贼。其头部充满鲸蜡器官，帮助调节浮力。现代航运噪音干扰其声呐系统，导致搁浅事件增加40%。多米尼加海域的个体被发现会形成'托儿所'，雌鲸轮流照顾幼鲸。一头成年抹香鲸每天需要消耗1吨食物。",
+    "desc": "With the largest brain (7.8kg), they dive 3,000m for giant squid. Their spermaceti organ regulates buoyancy. Shipping noise increases strandings by 40%. Dominican populations form 'nurseries' with babysitting females. Adults consume 1 ton of food daily."
   },
   {
     "id": 2308298,
     "scientificName": "Balaenoptera musculus",
     "name": "蓝鲸",
-    "image": "https://media.istockphoto.com/id/2163640307/photo/young-humpback-whale-swimming-close-under-water-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=GR6GlPNtEDbLr0E89V5pNbz-00sIx6hyxAPO5WU00Fc="
+    "image": "https://media.istockphoto.com/id/2163640307/photo/young-humpback-whale-swimming-close-under-water-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=GR6GlPNtEDbLr0E89V5pNbz-00sIx6hyxAPO5WU00Fc=",
+    "desc_zh": "蓝鲸是地球史上最大的动物，体长33米，心脏如小汽车大小。其叫声达188分贝，能在800公里外被同类接收。20世纪捕鲸业导致种群减少99%，现存约1-2.5万头。智利海域的蓝鲸被发现会进行'倒立进食'，垂直张开巨口过滤磷虾。一头成年蓝鲸每天需要消耗4000万只磷虾，相当于3.6吨。",
+    "desc": "The largest animal ever at 33m long, with a car-sized heart. Their 188-decibel calls travel 800km. Whaling caused 99% decline, leaving 10,000-25,000. Chilean whales feed vertically in 'inverted position', consuming 40 million krill (3.6 tons) daily."
   },
   {
     "id": 2308301,
     "scientificName": "Dugong dugon",
     "name": "儒艮",
+    "desc_zh": "被称为'美人鱼'原型的海牛目动物，中国海域已20年未见踪迹。它们依赖海草床生存，每天进食30公斤海草。澳大利亚昆士兰沿岸仍有较大种群，但渔船螺旋桨和塑料污染导致每年约10%个体死亡。雌性儒艮每3-7年才生育一次，繁殖率极低。",
+    "desc": "These 'mermaid' mammals haven't been seen in Chinese waters for 20 years. Dependent on seagrass beds, they consume 30kg daily. Queensland's population faces 10% annual mortality from boat strikes and plastic. Females breed only every 3-7 years, with critically low reproduction rates.",
     "image": "https://media.istockphoto.com/id/140138381/photo/dugong.webp?a=1&b=1&s=612x612&w=0&k=20&c=SHl62lHwzWD1agxRtaeWf326XiwnJCBjCWbQ_4RJk24="
   }
 ]
