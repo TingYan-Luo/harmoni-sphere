@@ -18,6 +18,7 @@ export default function DetailModal(props: DetailModalProps) {
       onCancel={onClose}
       footer={null}
       width={400}
+      wrapClassName={styles['detail-modal']}
     >
       <div className={styles.detail}>
         <div className={styles['detail-top']}>

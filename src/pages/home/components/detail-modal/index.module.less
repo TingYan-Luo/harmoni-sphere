@@ -1,8 +1,40 @@
 .detail {
   height: 460px;
+  overflow: hidden;
+  padding: 32px 24px 12px;
+  display: flex;
+  flex-direction: column;
+  &-modal {
+    :global {
+      .ant-modal {
+        .ant-modal-close {
+          top: 2px;
+          inset-inline-end: 0px;
+        }  
+        .ant-modal-content {
+          padding: 0;
+        }
+      }
+    }
+  }
   &-top>img {
     height: 200px;
     width: 100%;
     object-fit: cover;
   }
+
+  &-bottom {
+    flex: 1;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .detail {
+    height: 400px;
+    &-top>img {
+      height: 180px;
+    }
+  }
+  
 }

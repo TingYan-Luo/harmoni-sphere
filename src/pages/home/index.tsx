@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+
+// import { OrbitControls } from "@react-three/drei";
 
 import InfiniteImageCarousel from "../../components/infinite-image-carousel";
 import ParticleCloud from "./components/particles-cloud";
@@ -11,6 +12,7 @@ import SpeciesList from "./stastic/species-list.json";
 import TextEn from './stastic/text-en.json';
 import TextZh from './stastic/text-zh.json';
 import Websites from './stastic/websites.json';
+import githubLogo from '../../assets/github-mark.png';
 
 import styles from './index.module.less';
 
@@ -45,6 +47,10 @@ export default function Home() {
     }
   };
 
+  const goGithub = () => {
+    window.open('https://github.com/TingYan-Luo/harmoni-sphere');
+  };
+
   useEffect(() => {
     setLanguage('en');
     getImagesList();
@@ -60,16 +66,15 @@ export default function Home() {
             <p className={styles['main-title-desc']}>{texts.main?.desc}</p>
           </h1>
           <h1 className={styles['main-title-2']}>{texts.main?.title[1]}</h1>
-          
         </div>
         <Canvas 
           className={styles.canvas} 
           style={{ height: '100vh' }} 
-          camera={{ position: [0, 15, 15], fov: 40 }}
+          camera={{ position: [0, 15, 15], fov: window.document.body.clientWidth > 768 ? 40 : 80 }}
         >
           <ParticleCloud />
           <ambientLight intensity={0.5} />
-          <OrbitControls enableZoom={false} />
+          {/* <OrbitControls enableZoom={false} /> */}
         </Canvas>
       </div>
       <div className={styles.images}>
@@ -150,6 +155,10 @@ export default function Home() {
           {texts.end}
           <div className={styles['footer-text-bird']} />
         </div>
+        <p className={styles['footer-contact']}>
+          {texts.contact}
+          <img src={githubLogo} onClick={goGithub} />
+        </p>
         <FooterGrass />
       </div>
     </div>
