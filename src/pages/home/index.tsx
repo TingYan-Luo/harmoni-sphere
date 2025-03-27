@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+// import { OrbitControls } from "@react-three/drei";
 
 import InfiniteImageCarousel from "../../components/infinite-image-carousel";
 import ParticleCloud from "./components/particles-cloud";
@@ -65,11 +65,11 @@ export default function Home() {
         <Canvas 
           className={styles.canvas} 
           style={{ height: '100vh' }} 
-          camera={{ position: [0, 15, 15], fov: 40 }}
+          camera={{ position: [0, 15, 15], fov: window.document.body.clientWidth > 768 ? 40 : 80 }}
         >
           <ParticleCloud />
           <ambientLight intensity={0.5} />
-          <OrbitControls enableZoom={false} />
+          {/* <OrbitControls enableZoom={false} /> */}
         </Canvas>
       </div>
       <div className={styles.images}>
