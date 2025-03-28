@@ -15,6 +15,7 @@ import Websites from './stastic/websites.json';
 import githubLogo from '../../assets/github-mark.png';
 
 import styles from './index.module.less';
+import { useParams } from "react-router-dom";
 
 /*
  * @author: tingyan.lty
@@ -26,11 +27,13 @@ export default function Home() {
   const [texts, setTexts] = useState<Record<string, any>>({});
   const [language, setLanguage] = useState<'en' | 'zh'>('en');
   const [detail, setDetail] = useState<any>();
+
+  const params = useParams();
+  const { language: lang } = params;
   const getImagesList = async () => {
     setImages(SpeciesList);
   };
   const onImageClick = (id: string, data: any) => {
-    console.log('🚀 ~ onImageClick ~ data:', data);
     const isActive = activeId !== id;
     if (isActive) {
       const index = images.findIndex(item => item.id === id);
@@ -52,10 +55,11 @@ export default function Home() {
   };
 
   useEffect(() => {
-    setLanguage('en');
+    const l: any = lang || 'en';
+    setLanguage(l);
     getImagesList();
-    setTexts(language === 'zh' ? TextZh : TextEn);
-  }, []);
+    setTexts(l === 'zh' ? TextZh : TextEn);
+  }, [lang]);
 
   return (
     <div className={styles.home}>

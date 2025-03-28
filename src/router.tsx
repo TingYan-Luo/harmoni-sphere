@@ -7,7 +7,7 @@ import Home from "./pages/home/index";
  */
 export default [
   {
-    path: '/',
+    path: '/:language?',
     element: <Home />,
   },
   {
