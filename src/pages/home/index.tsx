@@ -148,8 +148,8 @@ export default function Home() {
             ))
           }
         </div>
-        <div className={styles.sun}></div>
       </div>
+      <div className={styles.sun}></div>
       <div className={styles.footer}>
         <div className={styles['footer-text']}>
           {texts.end}
