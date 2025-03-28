@@ -23,31 +23,24 @@ import { useParams } from "react-router-dom";
  */
 export default function Home() {
   const [images, setImages] = useState([]);
-  const [activeId, setActiveId] = useState<string>();
   const [texts, setTexts] = useState<Record<string, any>>({});
   const [language, setLanguage] = useState<'en' | 'zh'>('en');
   const [detail, setDetail] = useState<any>();
 
   const params = useParams();
-  const { language: lang } = params;
+  const { language: urlLang } = params;
   const getImagesList = async () => {
     setImages(SpeciesList);
   };
   const onImageClick = (id: string, data: any) => {
-    const isActive = activeId !== id;
-    if (isActive) {
-      const index = images.findIndex(item => item.id === id);
-      setActiveId(id);
-      setDetail({
-        ...data,
-        title: language === 'zh' ? data.name : data.scientificName,
-        content: language === 'zh' ? data.desc_zh : data.desc,
-        index,
-      });
-    } else {
-      setActiveId(undefined);
-      setDetail(undefined);
-    }
+    const index = images.findIndex(item => item.id === id);
+    setDetail({
+      ...data,
+      id,
+      title: language === 'zh' ? data.name : data.scientificName,
+      content: language === 'zh' ? data.desc_zh : data.desc,
+      index,
+    });
   };
 
   const goGithub = () => {
@@ -55,11 +48,11 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const l: any = lang || 'en';
+    const l: any = urlLang || 'en';
     setLanguage(l);
     getImagesList();
     setTexts(l === 'zh' ? TextZh : TextEn);
-  }, [lang]);
+  }, [urlLang]);
 
   return (
     <div className={styles.home}>
@@ -96,8 +89,8 @@ export default function Home() {
         <div className={styles['images-list']}>
           <InfiniteImageCarousel 
             id="first"
-            activeId={activeId}
-            active={activeId?.startsWith('first')}
+            activeId={detail?.id}
+            active={detail?.id?.startsWith('first')}
             images={images.slice(0, 10)}
             itemHeight={200}
             itemWidth={300}
@@ -105,8 +98,8 @@ export default function Home() {
           />
           <InfiniteImageCarousel 
             id="second"
-            activeId={activeId}
-            active={activeId?.startsWith('second')}
+            activeId={detail?.id}
+            active={detail?.id?.startsWith('second')}
             images={images.slice(10, 20)}
             itemHeight={200}
             itemWidth={300}
@@ -115,15 +108,19 @@ export default function Home() {
           />
           <InfiniteImageCarousel 
             id="thrid"
-            active={activeId?.startsWith('thrid')}
-            activeId={activeId}
+            active={detail?.id?.startsWith('thrid')}
+            activeId={detail?.id}
             images={images.slice(20)}
             itemHeight={200}
             itemWidth={300}
             onItemClick={onImageClick}
           />
         </div>
-        <DetailModal open={!!detail} onClose={() => setDetail(undefined)} data={detail} />
+        <DetailModal 
+          open={!!detail} 
+          onClose={() => setDetail(undefined)} 
+          data={detail} 
+        />
       </div>
       <div className={styles.about}>
         <div className={styles.tip}>
