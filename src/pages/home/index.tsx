@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useParams } from "react-router-dom";
-
-// import { OrbitControls } from "@react-three/drei";
+import * as motion from "motion/react-client"
 
 import InfiniteImageCarousel from "@/components/infinite-image-carousel";
 import ParticleCloud from "./components/particles-cloud";
@@ -26,6 +25,9 @@ export default function Home() {
   const [texts, setTexts] = useState<Record<string, any>>({});
   const [language, setLanguage] = useState<'en' | 'zh'>('en');
   const [detail, setDetail] = useState<any>();
+  const small = useMemo(() => {
+    return window.document.body.clientWidth < 768;
+  }, [])
 
   const params = useParams();
   const { language: urlLang } = params;
@@ -55,14 +57,26 @@ export default function Home() {
   }, [urlLang]);
 
   return (
-    <div className={styles.home}>
+    <motion.div className={styles.home} initial="offscreen" whileInView="onscreen" viewport={{ amount: 0.8 }}>
       <div className={styles.main}>
         <div className={styles['main-title']}>
-          <h1 className={styles['main-title-1']}>
+          <motion.h1 
+            className={styles['main-title-1']} 
+            initial={{ left: -100, opacity: 0 }} 
+            whileInView={{ left: small ? 32 : 90, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
             {texts.main?.title[0]}
             <p className={styles['main-title-desc']}>{texts.main?.desc}</p>
-          </h1>
-          <h1 className={styles['main-title-2']}>{texts.main?.title[1]}</h1>
+          </motion.h1>
+          <motion.h1 
+            className={styles['main-title-2']}
+            initial={{ right:-100, opacity: 0 }} 
+            whileInView={{ right: small ? 32 : 90, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+            {texts.main?.title[1]}
+          </motion.h1>
         </div>
         <Canvas 
           className={styles.canvas} 
@@ -78,14 +92,19 @@ export default function Home() {
         <div className={styles.tip}>
           {texts.animals?.tip}
         </div>
-        <div className={styles['images-title']}>
+        <motion.div 
+          className={styles['images-title']}
+          initial={{ opacity: 0, transform: 'translateY(50px)' }}
+          whileInView={{ opacity: 1, transform: 'translateY(0px)' }}
+          transition={{ duration: 0.6 }}
+        >
           <h3 className={styles['images-title-text']}>
             {texts.animals?.title}
           </h3>
           <div className={styles['images-title-action']}>
             {`-> ${texts.animals?.action}`}
           </div>
-        </div>
+        </motion.div>
         <div className={styles['images-list']}>
           <InfiniteImageCarousel 
             id="first"
@@ -126,12 +145,30 @@ export default function Home() {
         <div className={styles.tip}>
           {texts.about?.tip}
         </div>
-        {texts.about?.title?.map(item => <h3>{item}</h3>)}
-        <p>{texts.about?.desc}</p>
+        <motion.div
+          initial={{ opacity: 0, transform: 'translateY(50px)' }}
+          whileInView={{ opacity: 1, transform: 'translateY(0px)' }}
+          transition={{ duration: 0.6 }}
+        >
+          {texts.about?.title?.map(item => <h3>{item}</h3>)}
+        </motion.div>
+        <motion.p
+          initial={{ opacity: 0, transform: 'translateY(50px)' }}
+          whileInView={{ opacity: 1, transform: 'translateY(0px)' }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+        >
+          {texts.about?.desc}
+        </motion.p>
         <div className={styles.websites}>
           {
             Websites.map(item => (
-              <div key={item.id} className={styles['websites-item']} onClick={() => window.open(item.url)}>
+              <motion.div 
+                key={item.id} 
+                className={styles['websites-item']} 
+                onClick={() => window.open(item.url)}
+                whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+                whileTap={{ scale: 0.98 }}
+              >
                 <img 
                   className={styles['websites-item-img']} 
                   src={item.thumbnail} 
@@ -145,7 +182,7 @@ export default function Home() {
                     {language === 'zh' ? item.introduction_zh : item.introduction}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))
           }
         </div>
@@ -162,6 +199,6 @@ export default function Home() {
         </p>
         <FooterGrass />
       </div>
-    </div>
+    </motion.div>
   );
 }
