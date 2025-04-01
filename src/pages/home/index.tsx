@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
+import { useParams } from "react-router-dom";
 
 // import { OrbitControls } from "@react-three/drei";
 
-import InfiniteImageCarousel from "../../components/infinite-image-carousel";
+import InfiniteImageCarousel from "@/components/infinite-image-carousel";
 import ParticleCloud from "./components/particles-cloud";
 import FooterGrass from "./components/footer-grass";
 import DetailModal from "./components/detail-modal";
 
+import githubLogo from '@/assets/github-mark.png';
 import SpeciesList from "./stastic/species-list.json";
 import TextEn from './stastic/text-en.json';
 import TextZh from './stastic/text-zh.json';
 import Websites from './stastic/websites.json';
-import githubLogo from '../../assets/github-mark.png';
 
 import styles from './index.module.less';
-import { useParams } from "react-router-dom";
 
 /*
  * @author: tingyan.lty
